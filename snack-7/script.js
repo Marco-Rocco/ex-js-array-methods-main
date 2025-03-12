@@ -20,9 +20,10 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
+let studentToFind = 'Marco Lanci'
 
 const findClass = students.find((student) => {
-  return student.class
+  return student.name === studentToFind
 })
 
 console.log(findClass)
