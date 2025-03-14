@@ -20,4 +20,19 @@ const students = [
 ];
 
 // Recupera la classe dello studente 'Marco Lanci'
+
+let studentToFind = 'Marco Lanci'
+//ricorda che ilparametro della funzione è un nome assegnato da noi, potevamo scrivere pure nonnt
+const findClass = students.find((student) => {
+  if (student.name === studentToFind) {
+    return studentToFind
+  }
+})
+
+//quando fai il consolelog di una funzione, e vuoi cercare un dato del risultato della funzione, non inserire il risultato.dato, 
+// ma siccome la funzione stessa già ti fornisce un risultato con il return
+// fai funzione.dato
+console.log (findClass.class)
+
+
 // Risultato: '3C'
